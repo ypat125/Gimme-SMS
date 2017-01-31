@@ -152,11 +152,21 @@
                     <p>We hope to continue to improve and add more features to our SMS Information service. We already have several services coming soon such as instant weather updates and conditions, and breaking news alerts. So stay tuned!</p>
                 </div>
                 <div class="col-lg-4">
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        Sign up for email updates!
-                    </a>
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-lg btn-outline">Sign up</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
