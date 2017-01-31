@@ -40,8 +40,8 @@
 <body id="page-top" class="index">
 
     <style>
-        ::-webkit-input-placeholder { /* Chrome */
-          color: #ffffff;
+        input::-webkit-input-placeholder { /* Chrome */
+          color: white;
         }
     </style>
     
@@ -168,6 +168,7 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
                                 <input style="color:#ffffff;" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
