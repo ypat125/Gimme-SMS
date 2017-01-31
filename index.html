@@ -25,10 +25,12 @@
 
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script type="text/javascript">
-        function ShowMailingPopup(){
+        function showMailingPopUp(){
             require(["mojo/signup-forms/Loader"], 
             function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"d6aa2ca470fee3ff07148adf3","lid":"44e4d9e416"}) }) 
         }
+        
+        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
     </script>
     
     <!-- Custom Fonts -->
@@ -162,7 +164,7 @@
                 <div class="col-lg-4">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a id="chimpy_popup_open" href="#" class="btn btn-lg btn-outline" onclick ="ShowMailingPopup(); return false;">
+                    <a id="open-popup" href="#" class="btn btn-lg btn-outline">
                         Sign up for email updates!
                     </a>
                 </div>
